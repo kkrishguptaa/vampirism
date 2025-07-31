@@ -1,0 +1,106 @@
+body {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100vw;
+
+  font-family: "IM Fell English SC", serif;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+
+  flex-direction: column;
+}
+
+header.header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header.header nav ul.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header.header nav ul.nav-list li.nav-item {
+  margin: 0 1rem;
+}
+
+header.header nav ul.nav-list li.nav-item a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header.header nav ul.nav-list li.nav-item:hover a {
+  color: crimson;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+article {
+  background: hsla(0, 100%, 5%, 0.5);
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 1rem;
+  border: aliceblue solid 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+article h2 {
+  max-width: 620px;
+}
+
+article ul {
+  max-width: 65ch;
+}
+
+article ul li::marker {
+  color: crimson;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+article ul li {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
